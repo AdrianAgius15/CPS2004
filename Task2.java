@@ -30,5 +30,9 @@ public class Task2 {
         //s.say();
         //s.bye();
         
+        
+        Current c = new Current();
+        c.cardsAssociated();
+        c.lowCredit();
     }
 }

@@ -22,9 +22,4 @@ public class Savings extends Account {
             System.out.println("You have exceeded the no. of transactions allowed");
         }
     }
-    
-    //Test
-    public void bye(){
-        System.out.println("Bye");
-    }
 }
