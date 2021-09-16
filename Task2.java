@@ -7,14 +7,20 @@ public class Task2 {
         Scanner input = new Scanner(System.in);
         
         int option;
+        
+        Admin ad = new Admin();
+        //ad.deleteAccount();
+        //ad.approveAccount();
+        //ad.approveCard();
+        //ad.deleteCard();
+        //r.accessAccount();
+        
+        //System.out.println(u.getUsername() + " " + u.getPassword());
      
         Account a = new Account();
         
-        a.balance();
-        //Enter option 1) perform 2) display
-        //System.out.println("Enter option\n1. Perform transaction\n2. Display transactions");
-        //option = input.nextInt();
-        //a.transaction(option);
+        //a.balance();
+        //a.transaction();
         //a.currency();
         //a.cards();
         
@@ -32,7 +38,7 @@ public class Task2 {
         
         
         Current c = new Current();
-        c.cardsAssociated();
-        c.lowCredit();
+        //c.cardsAssociated();
+        //c.lowCredit();
     }
 }

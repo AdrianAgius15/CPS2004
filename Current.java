@@ -23,7 +23,7 @@ public class Current extends Account {
     
     //Requires minimum amount in account
     public void lowCredit(){
-        if (balance < minAmount){
+        if (getBalance() < minAmount){
             System.out.println("Your current account is running low on credit");
         }
     }

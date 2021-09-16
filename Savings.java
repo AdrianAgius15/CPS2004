@@ -13,7 +13,7 @@ public class Savings extends Account {
         balance += balance * 0.02;
         
         DecimalFormat df = new DecimalFormat("#.##");
-        System.out.println("Balance updated with interest: " + df.format(balance));
+        System.out.println("Balance updated with interest: " + df.format(getBalance()));
     }
     
     //Permits a max no. of transactions

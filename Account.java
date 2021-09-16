@@ -5,27 +5,81 @@ import java.text.DecimalFormat;
 
 /*Object Account which holds all operations common to the accounts*/
 public class Account {
-    public double balance = 200.539;
+    double balance = 200.539;
     
-    public int amount;
+    public double amount;
     public String accountFrom;
     public String accountTo;
     
-    public char currency;
+    private char currency;
     
-    public int numCards;
+    private int numCards;
     
-    public char choice;
+    private char choice;
+    
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+    
+    public double getBalance() {
+        return balance;
+    }
+    
+    /*
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+    
+    public double getAmount() {
+        return amount;
+    }
+    
+    public void setAccountFrom(String accountFrom) {
+        this.accountFrom = accountFrom;
+    }
+    
+    public String getAccountFrom() {
+        return accountFrom;
+    }
+    
+    public void setAccountTo(String accountTo){
+        this.accountTo = accountTo;
+    }
+    
+    public String getAccountTo(){
+        return accountTo;
+    }
+    */
+    
+    public void setCurrency(char currency) {
+        this.currency = currency;
+    }
+    
+    public char getCurrency() {
+        return currency;
+    }
+    
+    public void setNumCards(int numCards){
+        this.numCards = numCards;
+    }
+    
+    public int getNumCards(){
+        return numCards;
+    }
     
     //Shows user balance
     public void balance(){        
         DecimalFormat df = new DecimalFormat("#.##");
-        System.out.println("Balance in account is: " + df.format(balance));
+        System.out.println("Balance in account is: " + df.format(getBalance()));
     }
     
     //Performs transactions and shows previous transactions
-    public void transaction(int option){
+    public void transaction(){
         Scanner input = new Scanner(System.in);
+        
+        //Enter option 1) perform 2) display
+        System.out.println("Enter option\n1. Perform transaction\n2. Display transactions");
+        int option = input.nextInt();
         
         //Option 1 performs transaction
         if(option == 1) {
